@@ -13,8 +13,7 @@ public abstract class BaseTest {
     protected WebDriver driver;
 
     public BaseTest(){
-        DriverInitializer driverInitializer = new DriverInitializer();
-        this.driver = driverInitializer.initialize();
+        this.driver = DriverInitializer.initialize();
     }
 
     @BeforeClass

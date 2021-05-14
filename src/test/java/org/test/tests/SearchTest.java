@@ -11,7 +11,7 @@ public class SearchTest extends BaseTest{
             SearchPage searchPage = new SearchPage();
             searchPage.fillSearchField(text);
             searchPage.pressEnter();
-            Thread.sleep(3000);
+                       Thread.sleep(3000);
 
             SearchResultsPage searchResultsPage = new SearchResultsPage();
 
