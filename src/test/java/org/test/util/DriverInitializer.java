@@ -9,7 +9,7 @@ public class DriverInitializer {
 
     private static final WebDriver driver = new ChromeDriver();
 
-    public static WebDriver getDriver() {
+    private  WebDriver getDriver() {
         return driver;
     }
 

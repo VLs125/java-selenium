@@ -1,13 +1,13 @@
 package org.test.pages;
 
 import org.openqa.selenium.WebDriver;
+import org.test.util.DriverInitializer;
 
-import static org.test.util.DriverInitializer.getDriver;
-
-public abstract class BasePage {
+public class BasePage {
   public WebDriver driver;
 
     public BasePage() {
-        this.driver = getDriver();
+        DriverInitializer driverInitializer = new DriverInitializer();
+        this.driver = driverInitializer.initialize();
     }
 }

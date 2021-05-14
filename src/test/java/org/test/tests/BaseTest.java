@@ -1,20 +1,21 @@
 package org.test.tests;
 
-import net.bytebuddy.pool.TypePool;
 import org.openqa.selenium.WebDriver;
-import org.test.pages.BasePage;
 import org.test.util.DriverInitializer;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 
-import static org.test.util.DriverInitializer.getDriver;
 
 
 public abstract class BaseTest {
+    protected WebDriver driver;
 
-WebDriver driver = getDriver();
+    public BaseTest(){
+        DriverInitializer driverInitializer = new DriverInitializer();
+        this.driver = driverInitializer.initialize();
+    }
 
     @BeforeClass
     public void setUp(){

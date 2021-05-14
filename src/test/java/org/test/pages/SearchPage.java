@@ -3,6 +3,7 @@ package org.test.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 public class SearchPage extends BasePage{
     public SearchPage(){
@@ -10,8 +11,6 @@ public class SearchPage extends BasePage{
     }
 //    @FindBy(name ="q")
 //    private WebElement searchField;
-
-
     private final By searchField = By.name("q");
     WebElement searchFieldElement = driver.findElement(searchField);
 
