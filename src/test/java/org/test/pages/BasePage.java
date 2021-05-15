@@ -3,11 +3,11 @@ package org.test.pages;
 import org.openqa.selenium.WebDriver;
         import org.test.util.DriverInitializer;
 
-public class BasePage {
-    public WebDriver driver;
+class BasePage {
+    WebDriver driver;
 
 
-    public BasePage() {
+    BasePage() {
         this.driver = DriverInitializer.initialize();
     }
 }

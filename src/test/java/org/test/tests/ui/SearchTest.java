@@ -1,13 +1,14 @@
 package org.test.tests.ui;
+
+import org.test.data.Data;
 import org.test.pages.SearchPage;
 import org.test.pages.SearchResultsPage;
 import org.testng.annotations.Test;
-import org.test.data.Data;
 
 public class SearchTest extends BaseTest{
 
 
-    @Test(dataProvider ="searchQuery",dataProviderClass = Data.class)
+    @Test(dataProvider ="searchQuery",dataProviderClass = Data.UIData.class)
         public void openGoogleComInChromeTest (String text) throws InterruptedException {
 
             SearchPage searchPage = new SearchPage();
@@ -18,10 +19,7 @@ public class SearchTest extends BaseTest{
             SearchResultsPage searchResultsPage = new SearchResultsPage();
 
             searchResultsPage.assertThatTopResultContainsProperAttributeText("LC20lb");
-            searchResultsPage.assertThatTopResultContainsCorrectText("Selenium Webdriver");
-
-
-
+            searchResultsPage.assertThatTopResultContainsCorrectText("Selenium WebDriver");
 
         }
 

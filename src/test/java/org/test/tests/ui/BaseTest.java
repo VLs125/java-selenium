@@ -19,17 +19,17 @@ public abstract class BaseTest {
     public void setUp(){
 
         driver.get("https://www.google.com/");
-    }
+                }
 
-    @AfterClass()
-    public void tearDown(){
+@AfterClass()
+public void tearDown(){
         driver.close();
         driver.quit();
-    }
-    @AfterMethod()
-    public void goBack(){
+        }
+@AfterMethod()
+public void goBack(){
         driver.navigate().back();
-    }
+        }
 
 
-}
+        }

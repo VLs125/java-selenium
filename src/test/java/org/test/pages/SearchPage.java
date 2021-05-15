@@ -13,7 +13,7 @@ public class SearchPage extends BasePage{
 // private WebElement searchField;
     private final By searchField = By.name("q");
 
-    WebElement searchFieldElement = driver.findElement(searchField);
+    private WebElement searchFieldElement = driver.findElement(searchField);
 
 
 
