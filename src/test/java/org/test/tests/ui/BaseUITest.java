@@ -8,10 +8,10 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 
 
-public abstract class BaseTest {
+public abstract class BaseUITest {
     private WebDriver driver;
 
-    BaseTest(){
+    BaseUITest(){
         this.driver = DriverInitializer.initialize();
     }
 

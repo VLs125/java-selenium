@@ -2,6 +2,8 @@ package org.test.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
@@ -11,6 +13,8 @@ public class SearchResultsPage extends BasePage {
     public SearchResultsPage() {
         super();
     }
+
+
 
     public void assertThatTopResultContainsCorrectText(String expectedText) {
         WebElement resultRowElement = driver.findElement(resultRow);
@@ -23,5 +27,9 @@ public class SearchResultsPage extends BasePage {
         assertThat(resultRowElement.getAttribute("class")).as("Wrong attribute text!").containsIgnoringCase(expectedText);
 
 
+    }
+    public void waitResultPageLoaded(){
+         WebElement waitResultLoaded = new WebDriverWait(driver, 10)
+                .until(ExpectedConditions.presenceOfElementLocated(resultRow));
     }
 }
