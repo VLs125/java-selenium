@@ -9,10 +9,12 @@ public class SearchPage extends BasePage{
     public SearchPage(){
         super();
     }
-//    @FindBy(name ="q")
-//    private WebElement searchField;
+//@FindBy(name ="q")
+// private WebElement searchField;
     private final By searchField = By.name("q");
+
     WebElement searchFieldElement = driver.findElement(searchField);
+
 
 
     public void fillSearchField (String text){

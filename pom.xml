@@ -14,9 +14,9 @@
             <version>3.141.59</version>
         </dependency>
         <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>7.4.0</version>
+            <groupId>org.junit.vintage</groupId>
+            <artifactId>junit-vintage-engine</artifactId>
+            <version>5.7.1</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -37,7 +37,12 @@
             <version>2.9.0</version>
             <scope>test</scope>
         </dependency>
-
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.4.0</version>
+            <scope>test</scope>
+        </dependency>
 
 
     </dependencies>

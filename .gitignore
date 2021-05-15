@@ -1,0 +1,11 @@
+# Created by .ignore support plugin (hsz.mobi)
+.gitignore
+.idea/.gitignore
+.idea/codeStyles/
+.idea/compiler.xml
+.idea/java-selenium.iml
+.idea/libraries/
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+target/

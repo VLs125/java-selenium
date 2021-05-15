@@ -1,33 +1,32 @@
 package org.test.tests.ui;
 
+
 import org.openqa.selenium.WebDriver;
 import org.test.util.DriverInitializer;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.DataProvider;
-
 
 
 public abstract class BaseTest {
-    protected WebDriver driver;
+    private WebDriver driver;
 
-    public BaseTest(){
+    BaseTest(){
         this.driver = DriverInitializer.initialize();
     }
 
-    @BeforeClass
+    @BeforeClass()
     public void setUp(){
 
         driver.get("https://www.google.com/");
     }
 
-    @AfterClass
+    @AfterClass()
     public void tearDown(){
         driver.close();
         driver.quit();
     }
-    @AfterMethod
+    @AfterMethod()
     public void goBack(){
         driver.navigate().back();
     }

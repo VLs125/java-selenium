@@ -4,12 +4,17 @@
 <suite name="Grouping in TestNG">
     <groups>
         <run>
-            <include name="api"></include>
+            <include name="api"/>
         </run>
     </groups>
     <test name="Grouping in TestNG">
         <classes>
-            <class name="org.test.tests.api.APITest"></class>
+            <class name="org.test.tests.api.APITest"/>
+        </classes>
+    </test>
+    <test name="Grouping in TestNG">
+        <classes>
+            <class name="org.test.tests.api.APITest"/>
         </classes>
     </test>
 </suite>
