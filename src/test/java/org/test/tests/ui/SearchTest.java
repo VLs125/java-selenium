@@ -1,11 +1,11 @@
-package org.test.tests;
+package org.test.tests.ui;
 import org.test.pages.SearchPage;
 import org.test.pages.SearchResultsPage;
 import org.testng.annotations.Test;
 
 public class SearchTest extends BaseTest{
 
-        @Test(dataProvider ="dataProvider")
+        @Test(dataProvider ="search query", groups = {"ui","feature"})
         public void openGoogleComInChromeTest (String text) throws InterruptedException {
 
             SearchPage searchPage = new SearchPage();

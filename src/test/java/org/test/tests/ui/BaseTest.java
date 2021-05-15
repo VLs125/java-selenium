@@ -1,4 +1,4 @@
-package org.test.tests;
+package org.test.tests.ui;
 
 import org.openqa.selenium.WebDriver;
 import org.test.util.DriverInitializer;
@@ -32,10 +32,5 @@ public abstract class BaseTest {
         driver.navigate().back();
     }
 
-    @DataProvider(name = "dataProvider")
-    public Object [][] dataProviderMethod(){
 
-        return new Object[][]{{"selenium java"},{"selenium javascript"}};
-
-    }
 }
