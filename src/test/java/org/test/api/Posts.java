@@ -16,7 +16,7 @@ public class Posts {
                 .get(url)
                 .then()
                 .statusCode(200)
-                .assertThat().body("id",equalTo(id));
+                .assertThat().body(,equalTo(id));
         Response response = get(url);
         LOGGER.info("Posts has data "+ response.getBody().asString());
     }
