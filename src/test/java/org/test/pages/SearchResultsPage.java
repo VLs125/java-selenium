@@ -1,6 +1,7 @@
 package org.test.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -10,8 +11,8 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 public class SearchResultsPage extends BasePage {
     private By resultRow = By.xpath("//div[@class='g']//h3");
 
-    public SearchResultsPage() {
-        super();
+    public SearchResultsPage(WebDriver driver) {
+        super(driver);
     }
 
 

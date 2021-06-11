@@ -11,12 +11,14 @@ public class SearchTest extends BaseUITest{
     @Test(dataProvider ="searchQuery",dataProviderClass = Data.UIData.class)
         public void openGoogleComInChromeTest (String text) throws InterruptedException {
 
-            SearchPage searchPage = new SearchPage();
-            SearchResultsPage searchResultsPage = new SearchResultsPage();
+        getDriver().get("https://www.google.com/");
 
+            SearchPage searchPage = new SearchPage(getDriver());
             searchPage.fillSearchField(text);
             searchPage.pressEnter();
-            searchResultsPage.waitResultPageLoaded();
+
+        SearchResultsPage searchResultsPage = new SearchResultsPage(getDriver());
+        searchResultsPage.waitResultPageLoaded();
             searchResultsPage.assertThatTopResultContainsProperAttributeText("LC20lb");
             searchResultsPage.assertThatTopResultContainsCorrectText("Selenium WebDriver");
 
