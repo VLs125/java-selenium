@@ -11,7 +11,6 @@ public class SearchPage extends BasePage{
     public SearchPage(WebDriver driver){
         super(driver);
     }
-    BasePage basePage;
 
     private final By searchField = By.name("q");
 

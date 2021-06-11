@@ -4,6 +4,7 @@ import io.github.bonigarcia.wdm.managers.ChromeDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.test.steps.SearchSteps;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -12,10 +13,8 @@ import org.testng.annotations.BeforeClass;
 public abstract class BaseUITest {
     private WebDriver driver;
 
-
     @BeforeClass()
     public void setUp() {
-
         System.setProperty("headless", "false"); // You can set this property elsewhere
         System.setProperty("webdriver.chrome.whitelistedIps", "");
 
@@ -30,6 +29,11 @@ public abstract class BaseUITest {
         } else {
             driver = new ChromeDriver();
         }
+
+        driver.get("https://www.google.com/");
+
+
+
     }
 
     @AfterClass()
@@ -44,6 +48,7 @@ public abstract class BaseUITest {
     public void goBack() {
         driver.navigate().back();
     }
+
     public WebDriver getDriver(){
         return driver;
     }
