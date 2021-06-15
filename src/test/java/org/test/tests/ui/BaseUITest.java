@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.test.steps.SearchSteps;
+import org.test.util.PropertyReader;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -29,9 +30,7 @@ public abstract class BaseUITest {
         } else {
             driver = new ChromeDriver();
         }
-
         driver.get("https://www.google.com/");
-
 
 
     }
@@ -49,7 +48,7 @@ public abstract class BaseUITest {
         driver.navigate().back();
     }
 
-    public WebDriver getDriver(){
+    public WebDriver getDriver() {
         return driver;
     }
 

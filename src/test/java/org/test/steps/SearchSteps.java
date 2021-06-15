@@ -12,7 +12,9 @@ public class SearchSteps extends SearchPage {
 
     private final SearchPage searchPage = new SearchPage(driver);
 
-  public SearchResultSteps executeSearchByKeyword(String keyword){
+
+
+    public SearchResultSteps executeSearchByKeyword(String keyword){
       searchPage.fillSearchField(keyword);
       searchPage.pressEnter();
       return new SearchResultSteps(driver);

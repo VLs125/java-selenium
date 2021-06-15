@@ -11,6 +11,7 @@ public class SearchTest extends BaseUITest {
 
     @Test(dataProvider = "searchQuery", dataProviderClass = Data.UIData.class)
     public void openGoogleComInChromeTest(String text) throws InterruptedException {
+
        SearchSteps steps = new SearchSteps(getDriver());
         steps.executeSearchByKeyword(text).verifyThatTopResultContainsCorrectText();
 
