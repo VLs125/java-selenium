@@ -7,8 +7,10 @@ import org.test.steps.SearchSteps;
 import org.testng.annotations.Test;
 
 public class SearchTest extends BaseUITest {
+    SearchTest(){
+        super("https://www.google.com/");
 
-
+    }
     @Test(dataProvider = "searchQuery", dataProviderClass = Data.UIData.class)
     public void openGoogleComInChromeTest(String text) throws InterruptedException {
        SearchSteps steps = new SearchSteps(getDriver());

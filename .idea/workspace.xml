@@ -5,14 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc03b54b-a300-4ceb-b8e7-8f657d5e48fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/test/steps/SearchResultSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/test/steps/SearchSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/test/pages/SearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/test/pages/SearchPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/test/tests/ui/AutorizationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/utils/PropertyReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/conf.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/config/conf.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/config/testng.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/test/api/Posts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/test/api/Posts.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/test/tests/ui/BaseUITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/test/tests/ui/BaseUITest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/test/tests/ui/SearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/test/tests/ui/SearchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/resources/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/chromedriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/resources/msedgedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/msedgedriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled.iml" beforeDir="false" afterPath="$PROJECT_DIR$/untitled.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,13 +50,20 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Project\tests\src\test\java\resources" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ibank-automation\src\test\resources" />
+    </key>
   </component>
-  <component name="RunManager" selected="TestNG.PostsAPITest">
+  <component name="RunManager" selected="TestNG.SearchTest">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -135,8 +146,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.PostsAPITest" />
         <item itemvalue="TestNG.SearchTest" />
+        <item itemvalue="TestNG.PostsAPITest" />
         <item itemvalue="TestNG.SearchTest.openGoogleComInChromeTest" />
         <item itemvalue="TestNG.TestGroups" />
       </list>
@@ -153,6 +164,8 @@
       <workItem from="1623382760982" duration="181000" />
       <workItem from="1623382969477" duration="2928000" />
       <workItem from="1623386502163" duration="10107000" />
+      <workItem from="1623723342017" duration="360000" />
+      <workItem from="1623723745124" duration="6190000" />
     </task>
     <task id="LOCAL-00001" summary="fix driver initialize">
       <created>1623387980605</created>
@@ -166,6 +179,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix driver initialize" />
