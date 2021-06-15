@@ -5,10 +5,12 @@ import org.test.pages.SearchPage;
 import org.test.pages.SearchResultsPage;
 import org.test.steps.SearchSteps;
 import org.testng.annotations.Test;
+import utils.InitializationData;
+import utils.PagesConstants;
 
 public class SearchTest extends BaseUITest {
     SearchTest(){
-        super("https://www.google.com/");
+        super(InitializationData.getPages(PagesConstants.home));
 
     }
     @Test(dataProvider = "searchQuery", dataProviderClass = Data.UIData.class)
