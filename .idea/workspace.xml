@@ -7,7 +7,6 @@
     <list default="true" id="bc03b54b-a300-4ceb-b8e7-8f657d5e48fc" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/src/test/java/org/test/tests/ui/AutorizationTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/utils/PropertyReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/conf.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/config/conf.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/config/testng.xml" beforeDir="false" />
@@ -16,6 +15,7 @@
       <change beforePath="$PROJECT_DIR$/src/test/java/org/test/tests/ui/SearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/test/tests/ui/SearchTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/resources/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/chromedriver.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/resources/msedgedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/msedgedriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/conf.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/conf.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/untitled.iml" beforeDir="false" afterPath="$PROJECT_DIR$/untitled.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -165,7 +165,7 @@
       <workItem from="1623382969477" duration="2928000" />
       <workItem from="1623386502163" duration="10107000" />
       <workItem from="1623723342017" duration="360000" />
-      <workItem from="1623723745124" duration="6190000" />
+      <workItem from="1623723745124" duration="7241000" />
     </task>
     <task id="LOCAL-00001" summary="fix driver initialize">
       <created>1623387980605</created>
