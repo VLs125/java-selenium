@@ -11,12 +11,11 @@ public class LoginSteps extends LoginPage {
     private final LoginPage loginPage = new LoginPage(driver);
 
     public void executeFillLoginAndPasswordField(String login, String password){
-
         loginPage.fillLoginAndPasswordField(login,password);
+
 
     }
     public void executeClickOnLoginButton(){
-
         loginPage.clickOnLoginButton();
     }
     public LoginSteps executeFillCodeField(String code){

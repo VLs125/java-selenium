@@ -1,6 +1,5 @@
 package org.test.tests.ui;
 
-import org.test.config.BaseUITest;
 import utils.InitializationData;
 import utils.PagesConstants;
 

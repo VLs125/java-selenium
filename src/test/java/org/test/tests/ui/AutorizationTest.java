@@ -1,6 +1,5 @@
 package org.test.tests.ui;
 
-import org.test.config.BaseUITest;
 import org.test.steps.LoginSteps;
 import org.testng.annotations.Test;
 import utils.InitializationData;
@@ -17,9 +16,9 @@ public class AutorizationTest extends BaseUITest {
        LoginSteps steps = new LoginSteps(getDriver());
 
        steps.executeFillLoginAndPasswordField("testuiibank","123456Aa");
-       steps.clickOnLoginButton();
+       steps.executeClickOnLoginButton();
        steps.executeFillCodeField("123456");
-       steps.clickOnLoginButton();
+       steps.executeClickOnLoginButton();
        Thread.sleep(10000);
 
     }

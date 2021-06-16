@@ -1,7 +1,6 @@
 package org.test.tests.api;
 
 import org.test.api.Posts;
-import org.test.config.BaseAPITest;
 import org.test.data.Data;
 import org.testng.annotations.Test;
 
