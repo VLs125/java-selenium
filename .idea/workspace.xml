@@ -5,20 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc03b54b-a300-4ceb-b8e7-8f657d5e48fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/test/tests/ui/AutorizationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/InitializationData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/PagesConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/test/pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/config/conf.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/config/testng.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/test/api/Posts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/test/api/Posts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/test/pages/SearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/test/pages/SearchPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/test/tests/ui/BaseUITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/test/tests/ui/BaseUITest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/test/tests/ui/SearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/test/tests/ui/SearchTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/resources/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/chromedriver.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/resources/msedgedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/msedgedriver.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/PropertyReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/PropertyReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/conf.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/conf.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled.iml" beforeDir="false" afterPath="$PROJECT_DIR$/untitled.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -67,13 +57,15 @@
     </key>
   </component>
   <component name="RunManager" selected="TestNG.SearchTest">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -193,6 +185,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix driver initialize" />
