@@ -11,7 +11,7 @@ import org.testng.annotations.BeforeClass;
 
 public abstract class BaseUITest {
     private WebDriver driver;
-    private String page;
+    private final String page;
     BaseUITest(String page){
         this.page = page;
 

@@ -12,7 +12,14 @@ public class SearchPage extends BasePage{
         super(driver);
     }
 
+
+
     private final By searchField = By.name("q");
+
+    @Override
+    void waitPageLoaded(By locator) {
+
+    }
 
     private WebElement searchFieldElement = driver.findElement(searchField);
 
