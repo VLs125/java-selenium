@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import static com.jayway.restassured.RestAssured.get;
 import static com.jayway.restassured.RestAssured.when;
-import static com.sun.xml.internal.ws.spi.db.BindingContextFactory.LOGGER;
+//import static com.sun.xml.internal.ws.spi.db.BindingContextFactory.LOGGER;
 import static org.hamcrest.core.IsEqual.equalTo;
 
 public class Posts {
@@ -18,6 +18,7 @@ public class Posts {
                 .statusCode(200);
                 //.assertThat().body(,equalTo(id));
         Response response = get(url);
-        LOGGER.info("Posts has data "+ response.getBody().asString());
+        System.out.println("Posts has data "+ response.getBody().asString());
+     //   LOGGER.info("Posts has data "+ response.getBody().asString());
     }
 }
