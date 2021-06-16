@@ -12,8 +12,6 @@ public class SearchPage extends BasePage{
         super(driver);
     }
 
-
-
     private final By searchField = By.name("q");
 
     @Override
@@ -21,7 +19,7 @@ public class SearchPage extends BasePage{
 
     }
 
-    private WebElement searchFieldElement = driver.findElement(searchField);
+    private final WebElement searchFieldElement = driver.findElement(searchField);
 
     public void fillSearchField (String text){
         searchFieldElement.click();

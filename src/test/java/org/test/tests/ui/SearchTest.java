@@ -1,5 +1,6 @@
 package org.test.tests.ui;
 
+import org.test.config.BaseUITest;
 import org.test.data.Data;
 
 import org.test.steps.SearchSteps;

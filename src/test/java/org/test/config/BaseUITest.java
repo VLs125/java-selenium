@@ -1,5 +1,4 @@
-package org.test.tests.ui;
-
+package org.test.config;
 import io.github.bonigarcia.wdm.managers.ChromeDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -10,9 +9,11 @@ import org.testng.annotations.BeforeClass;
 
 
 public abstract class BaseUITest {
+
     private WebDriver driver;
     private final String page;
-    BaseUITest(String page){
+
+   public BaseUITest(String page) {
         this.page = page;
 
     }
@@ -50,7 +51,7 @@ public abstract class BaseUITest {
         driver.navigate().back();
     }
 
-    public WebDriver getDriver(){
+    public WebDriver getDriver() {
         return driver;
     }
 

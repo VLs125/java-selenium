@@ -11,27 +11,23 @@ public class LoginPage extends BasePage{
     public LoginPage(WebDriver driver) {
         super(driver);
     }
-    private final By baseLocator = By.xpath("//main[@class='body']");
-    private final By loginField = By.xpath(baseLocator + "//input[@id='name']");
-
-    private final By passwordField = By.xpath(baseLocator +"//input[@id='password']");
-
-    private final By loginButton = By.xpath(baseLocator +"//input[@id='kc-login']");
-
-    private final By otpCodeField = By.xpath(baseLocator +"//input[@id='otp']");
+    private final By baseLocator = By.xpath("//div[@class='container']");
+    private final By loginField = By.xpath("//input[@id='name']");
+    private final By passwordField = By.xpath("//input[@id='password']");
+    private final By loginButton = By.xpath("//input[@id='kc-login']");
+    private final By otpCodeField = By.xpath("//input[@id='otp']");
 
     @Override
      void waitPageLoaded(By locator) {
         new WebDriverWait(driver, 15)
-                .until(ExpectedConditions.presenceOfElementLocated(loginField));
+                .until(ExpectedConditions.presenceOfElementLocated(locator));
     }
 
 
     public void fillLoginAndPasswordField(String login, String password){
-
+        waitPageLoaded(loginField);
         WebElement loginFieldElement = driver.findElement(loginField);
         loginFieldElement.sendKeys(login);
-
 
         WebElement passwordFieldElement =driver.findElement(passwordField);
         passwordFieldElement.sendKeys(password);
@@ -42,7 +38,7 @@ public class LoginPage extends BasePage{
         loginButtonElement.click();
     }
     public void fillCodeField(String code){
-
+        waitPageLoaded(otpCodeField);
         WebElement otpCodeFieldElement = driver.findElement(otpCodeField);
         otpCodeFieldElement.sendKeys(code);
 

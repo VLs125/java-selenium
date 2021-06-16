@@ -7,6 +7,7 @@ public class InitializationData {
     private static Map<String, String> fillData(){
         Map<String, String> pagesList = new HashMap<>();
         pagesList.put("Home", "https://www.google.com/");
+        pagesList.put("AuthorizationPage","https://test-ibank2.bocbs.cardpay-test.com/ibank/");
         return pagesList;
     }
 
