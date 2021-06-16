@@ -1,4 +1,4 @@
-package org.test.tests.api;
+package org.test.config;
 
 
 

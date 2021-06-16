@@ -1,10 +1,9 @@
 package org.test.pages;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
+
 
 
 public class SearchPage extends BasePage{
@@ -15,9 +14,10 @@ public class SearchPage extends BasePage{
 
     private final By searchField = By.name("q");
 
-    private WebElement searchFieldElement = driver.findElement(searchField);
+    private final WebElement searchFieldElement = driver.findElement(searchField);
 
     public void fillSearchField (String text){
+        waitForElementToAppear(searchField);
         searchFieldElement.click();
         searchFieldElement.sendKeys(text);
 

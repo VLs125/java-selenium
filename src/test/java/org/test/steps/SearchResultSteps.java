@@ -13,7 +13,7 @@ public class SearchResultSteps extends SearchResultsPage {
     public SearchResultSteps verifyThatTopResultContainsCorrectText(){
         searchResultsPage.waitResultPageLoaded();
         searchResultsPage.assertThatTopResultContainsProperAttributeText("LC20lb");
-        searchResultsPage.assertThatTopResultContainsCorrectText("Selenium WebDriver");
+        searchResultsPage.assertThatTopResultContainsCorrectText("Selenium");
         return this;
     }
 
